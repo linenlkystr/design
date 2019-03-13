@@ -1,7 +1,7 @@
-package com.ofs.ci.state;
+package cn.ofs.ci.state;
 
-import com.ofs.ci.state.context.Context;
-import com.ofs.ci.state.state.impl.EditState;
+import cn.ofs.ci.state.context.Context;
+import cn.ofs.ci.state.state.impl.EditState;
 
 public class Demo {
 

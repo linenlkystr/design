@@ -1,7 +1,7 @@
-package com.ofs.ci.state.state.impl;
+package cn.ofs.ci.state.state.impl;
 
-import com.ofs.ci.state.context.Context;
-import com.ofs.ci.state.state.State;
+import cn.ofs.ci.state.context.Context;
+import cn.ofs.ci.state.state.State;
 
 public class PreviewState implements State {
 

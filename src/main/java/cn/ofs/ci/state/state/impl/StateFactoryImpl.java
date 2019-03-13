@@ -1,8 +1,8 @@
-package com.ofs.ci.state.state.impl;
+package cn.ofs.ci.state.state.impl;
 
-import com.ofs.ci.state.context.Context;
-import com.ofs.ci.state.state.State;
-import com.ofs.ci.state.state.StateFactory;
+import cn.ofs.ci.state.context.Context;
+import cn.ofs.ci.state.state.State;
+import cn.ofs.ci.state.state.StateFactory;
 
 public class StateFactoryImpl implements StateFactory {
 

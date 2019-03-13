@@ -1,8 +1,8 @@
-package com.ofs.ci.state.context;
+package cn.ofs.ci.state.context;
 
-import com.ofs.ci.state.state.State;
-import com.ofs.ci.state.state.StateFactory;
-import com.ofs.ci.state.state.impl.StateFactoryImpl;
+import cn.ofs.ci.state.state.State;
+import cn.ofs.ci.state.state.StateFactory;
+import cn.ofs.ci.state.state.impl.StateFactoryImpl;
 
 public class Context {
 

@@ -1,6 +1,6 @@
-package com.ofs.ci.state.state;
+package cn.ofs.ci.state.state;
 
-import com.ofs.ci.state.context.Context;
+import cn.ofs.ci.state.context.Context;
 
 public interface State {
 

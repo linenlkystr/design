@@ -1,4 +1,4 @@
-package com.ofs.ci.state.state;
+package cn.ofs.ci.state.state;
 
 public interface StateFactory {
 
