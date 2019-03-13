@@ -2,8 +2,16 @@ package cn.ofs.ci.state.state.impl;
 
 import cn.ofs.ci.state.context.Context;
 import cn.ofs.ci.state.state.State;
+import cn.ofs.ci.state.state.StateMode;
 
 public class PreviewState implements State {
+
+    @Override
+    public void saveContext(Context context, StateMode mode) {
+        if (mode == StateMode.EDIT_MODE) {
+            context.changeState(new EditState());
+        }
+    }
 
     @Override
     public void save(Context context) {
