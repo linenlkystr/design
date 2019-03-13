@@ -1,6 +1,8 @@
 package com.ofs.ci.state.context;
 
 import com.ofs.ci.state.state.State;
+import com.ofs.ci.state.state.StateFactory;
+import com.ofs.ci.state.state.impl.StateFactoryImpl;
 
 public class Context {
 
@@ -9,6 +11,7 @@ public class Context {
     public static final int PREVIEW_MODE = 1;
 
     private State state;
+    private StateFactory stateFactory = new StateFactoryImpl();
 
     public void changeState(State state) {
         this.state = state;
@@ -16,7 +19,7 @@ public class Context {
 
     public void doWork(int mode) {
         System.out.println("--------------------------------");
-        this.state.saveContext(this, mode);
+        this.changeState(stateFactory.createState(mode));
         this.state.add(this);
         this.state.modify(this);
         this.state.save(this);

@@ -6,13 +6,6 @@ import com.ofs.ci.state.state.State;
 public class PreviewState implements State {
 
     @Override
-    public void saveContext(Context context, int mode) {
-        if (mode == Context.EDIT_MODE) {
-            context.changeState(new EditState());
-        }
-    }
-
-    @Override
     public void save(Context context) {
         System.out.println("预览模式不支持【保存】");
     }
