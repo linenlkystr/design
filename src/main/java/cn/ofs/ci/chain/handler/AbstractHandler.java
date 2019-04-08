@@ -17,6 +17,7 @@ public abstract class AbstractHandler implements Handler {
     public void handlerRequest(Student student) {
 
         if (student != null) {
+
             if (student.getState() == this.state) {
                 this.process(student);
             } else {

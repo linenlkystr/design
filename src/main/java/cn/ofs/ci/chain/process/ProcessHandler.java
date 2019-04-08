@@ -15,6 +15,7 @@ public class ProcessHandler {
     private static ProcessHandler processHandler = new ProcessHandler();
 
     private ProcessHandler() {
+
         this.squadLeaderHandler = new SquadLeaderHandler();
         this.teacherHandler = new TeacherHandler();
         this.schoolMasterHandler = new SchoolMasterHandler();
